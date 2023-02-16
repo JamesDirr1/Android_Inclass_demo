@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.CookieDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/Frag_Cookie_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_max="300dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="4dp"
+        android:background="@color/black"
+        android:padding="2dp"
+        tools:src="@drawable/baseline_cookie_24"/>
+
+    <TextView
+        android:id="@+id/Frag_Cookie_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/Frag_Cookie_Image"
+        app:layout_constraintStart_toStartOf="@id/Frag_Cookie_Image"
+        app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Image"
+        tools:text="cookie name"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/Frag_Cookie_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Name"
+        app:layout_constraintStart_toStartOf="@id/Frag_Cookie_Name"
+        app:layout_constraintEnd_toEndOf="@id/Frag_Cookie_Name"
+        android:textSize="40dp"
+        android:text="test price"
+        />
+
+    <TextView
+        android:id="@+id/Frag_Cookie_Stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Price"
+        app:layout_constraintStart_toStartOf="@id/Frag_Cookie_Price"
+        app:layout_constraintEnd_toEndOf="@id/Frag_Cookie_Price"
+        android:textSize="28dp"
+        android:text="test"
+        />
+
+
+    <TextView
+        android:id="@+id/Frag_Cookie_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Stock"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:layout_margin="8dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

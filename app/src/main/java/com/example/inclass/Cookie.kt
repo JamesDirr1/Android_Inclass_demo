@@ -6,7 +6,9 @@ import java.sql.Time
 
 data class Cookie(
 val name: String,
-val price: Double,
-val image: Int,
+val price: String,
+val image: String,
 val description: String,
+val stock: String,
+
 )
