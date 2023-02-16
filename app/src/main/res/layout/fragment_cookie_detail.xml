@@ -11,15 +11,17 @@
         android:id="@+id/Frag_Cookie_Image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHeight_max="300dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="4dp"
+        android:adjustViewBounds="true"
         android:background="@color/black"
+        android:contentDescription="@string/image_of_cookies"
         android:padding="2dp"
-        tools:src="@drawable/baseline_cookie_24"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/baseline_cookie_24" />
 
     <TextView
         android:id="@+id/Frag_Cookie_Name"
@@ -29,7 +31,7 @@
         app:layout_constraintStart_toStartOf="@id/Frag_Cookie_Image"
         app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Image"
         tools:text="cookie name"
-        android:textSize="40dp"/>
+        android:textSize="40sp"/>
 
     <TextView
         android:id="@+id/Frag_Cookie_Price"
@@ -38,8 +40,8 @@
         app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Name"
         app:layout_constraintStart_toStartOf="@id/Frag_Cookie_Name"
         app:layout_constraintEnd_toEndOf="@id/Frag_Cookie_Name"
-        android:textSize="40dp"
-        android:text="test price"
+        android:textSize="40sp"
+        tools:text="test price"
         />
 
     <TextView
@@ -49,8 +51,8 @@
         app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Price"
         app:layout_constraintStart_toStartOf="@id/Frag_Cookie_Price"
         app:layout_constraintEnd_toEndOf="@id/Frag_Cookie_Price"
-        android:textSize="28dp"
-        android:text="test"
+        android:textSize="28sp"
+        tools:text="test"
         />
 
 
@@ -60,7 +62,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/Frag_Cookie_Stock"
         app:layout_constraintStart_toStartOf="parent"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_margin="8dp"
         />
 

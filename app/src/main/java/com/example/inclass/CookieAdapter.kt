@@ -1,19 +1,16 @@
 package com.example.inclass
 
-import android.icu.text.NumberFormat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.commit
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.inclass.UI.CookieDetailFragment
-import java.util.*
 
 class CookieAdapter(private val cookies: List<Cookie>) :
     RecyclerView.Adapter<CookieAdapter.CookieViewHolder>() {

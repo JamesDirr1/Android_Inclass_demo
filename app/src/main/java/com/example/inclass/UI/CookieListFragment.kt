@@ -120,8 +120,8 @@ class CookieListFragment : Fragment() {
             name = name,
             price = NumberFormat.getCurrencyInstance(Locale("us")).format(Random.nextDouble(2.00,8.00)),
             image = image,
-            description = description + " Get your fresh warm " + name + " available today!",
-            stock = "Cookies in Stock: " + Random.nextInt(0, 100)
+            description = "$description Get your fresh warm $name available today!",
+            stock = "Cookies in Stock: " + Random.nextInt(1, 100)
         )
 
 
