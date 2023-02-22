@@ -1,7 +1,7 @@
 package com.example.inclass
 
 
-data class Cookie(
+data class Cookie( //cookie class
 val name: String,
 val price: String,
 val image: String,
